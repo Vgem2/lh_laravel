@@ -10,19 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 
-
-Route::get('/', BaseController@home) {
-    return view('home');
-});
-
-Route::get('/rendezvenyek',EventsController@index) {
-    return view('events');
-});
-
-Route::get('/login', LoginController@login) {
-    return view('login');
-});
 */
+
+
 Route::get('/', 'BaseController@index');
 
 Route::get('/events','BaseController@events');
@@ -32,6 +22,12 @@ Route::get('/events/{event}','BaseController@show');
 Route::get('/pevents','BaseController@pevents');
 
 Route::get('/dev','BaseController@dev');
+
+Route::post('/dev','BaseController@dev_post');
+
+Route::get('/how2','BaseController@how2');
+
+Route::get('/library','BaseController@library');
 
 
 

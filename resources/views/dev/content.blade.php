@@ -1,7 +1,10 @@
 <?php
-if (!empty($post))
+
+//echo $pw;
+if (!empty($name))
 {
-    echo "done";
+
+    echo App\Login::login($name,$pw);
 }else
 {
    

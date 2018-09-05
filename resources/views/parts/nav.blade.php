@@ -3,10 +3,9 @@
 
         <a class="py-2 d-none d-md-inline-block" href="../">Kezdőlap</a>
         <a class="py-2 d-none d-md-inline-block" href="../events">Rendezvények</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Könyvtár</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Állandó tevékenységeink</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Bejelentkezés/Regisztráció</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Hogyan lehetek tag?</a>
+          <a class="py-2 d-none d-md-inline-block" href="../library">Könyvtár</a>
+          <a class="py-2 d-none d-md-inline-block" href="../pevents/">Állandó Eseményeink</a>
+          <a class="py-2 d-none d-md-inline-block" href="../how2">Hogyan lehetek tag?</a>
           
 
       </div>

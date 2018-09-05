@@ -32,17 +32,31 @@ class BaseController extends Controller
     
     public function pevents()
     {
-       
-
         return view('permanentevents');
+    }
+    
+     public function library()
+    {
+        return view('library');
     }
     public function dev(Request $request)
     {
        
-            $post=$request->all();
-
-        { }//do nothing
-        return view('dev.devsite',compact('post'));
+        $name = "";
+        $pw = "";
+        return view('dev.devsite',compact('name'),compact('pw'));
     }
+    public function dev_post(Request $request)
+    {
+       
+        // $post=$request->all();
+        $name = $request->input('usrnm');
+        $pw = $request->input('pw');
+        return view('dev.devsite',compact('name'),compact('pw'));
+    }
+     public function how2()
+     {
+         return view('how2');
+     }
   
 }

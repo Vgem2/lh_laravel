@@ -6,7 +6,8 @@
           
           <p class="lead"><?php  echo $event->body; ?></p>
         </div>
-        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 50%; border-radius: 21px 21px 0 0;">
+             <?php echo "<img style='object-fit:cover; padding-top:0px' src='".$event->img."' />"; ?>
           </div>
       </div>
        

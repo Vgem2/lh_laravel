@@ -2,9 +2,7 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
+
 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
@@ -20,9 +18,7 @@
   text-decoration: none;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
+
 
 .product-device {
   position: absolute;
@@ -77,3 +73,14 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+.box-shadow img
+{
+    width: inherit;
+    height: inherit;
+    
+}
+.d-md-flex a
+{
+    text-decoration: none;
+}
+
