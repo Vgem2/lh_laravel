@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Events;
+use App\Login;
 
 class BaseController extends Controller
 {
@@ -52,6 +53,11 @@ class BaseController extends Controller
         // $post=$request->all();
         $name = $request->input('usrnm');
         $pw = $request->input('pw');
+        if(Login::login($name,$pw)) 
+        {
+            $request->session()->put('usrnm',$name);
+            return redirect('/')->with('status', 'Üdvözlet, '.$name);
+        }
         return view('dev.devsite',compact('name'),compact('pw'));
     }
      public function how2()

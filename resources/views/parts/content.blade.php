@@ -2,6 +2,11 @@
 $i=0;
 
 ?>
+@if (session()->has('usrnm'))
+    @if (session('usrnm')=="admin")
+    <button name="edit" style="background-color:green; border-radius:5px; margin-left:25%; min-width:150px" >EDIT</button>
+    @endif
+@endif
 @while(count($events)<>0 )
                 
 <?php $event=$events->first(function($value, $key){return true;});

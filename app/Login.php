@@ -18,9 +18,9 @@ class Login extends Model
         foreach ($logins as $name => $password)
         {
             
-            if($name==$names && $pw==$password) return $reward=true;
+            if($name==$names && $pw==$password) return "true";
         }
-        return $reward=false;
+        return "false";
 
      
     }

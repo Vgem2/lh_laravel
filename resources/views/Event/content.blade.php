@@ -12,4 +12,9 @@
       </div>
        
     </div>
+@if (session()->has('usrnm'))
+    @if (session('usrnm')=="admin")
+    <button name="edit" style="background-color:green; border-radius:5px; margin-left:25%; min-width:150px" >EDIT</button>
+    @endif
+@endif
    
