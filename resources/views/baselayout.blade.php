@@ -73,5 +73,15 @@ window.setInterval(function ( ) {
         },10000);        
 });
     </script>
+      <script>
+function dropDown() {
+  var x = document.getElementById("navBar");
+  if (x.className.includes("site-header")) {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
   </body>
 </html>

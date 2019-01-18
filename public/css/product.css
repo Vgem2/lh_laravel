@@ -62,6 +62,11 @@
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+.site-header .icon 
+{
+    display: none;
+}
+
 .flex-equal > * {
   -ms-flex: 1;
   flex: 1;
@@ -70,6 +75,43 @@
   .flex-md-equal > * {
     -ms-flex: 1;
     flex: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .site-header a:not(:first-child) {display: none;}
+    .site-header a.icon {
+    float: right;
+    display: block;
+  }
+.container {
+  max-width: 1200px;
+    width: 85%;
+    max-height:20%;
+}
+    #BG
+{
+    min-height: 200px;
+    min-width: 79%;
+    max-width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+}
+    
+
+@media screen and (max-width: 767px) {
+  .site-header.responsive {position: relative;}
+  .site-header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    .site-header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 

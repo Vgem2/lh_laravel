@@ -1,4 +1,4 @@
-  <nav class="site-header sticky-top py-1" style="margin-bottom:0px;">
+  <nav id="navBar" class="site-header sticky-top py-1" style="margin-bottom:0px;">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
 
         <a class="py-2 d-none d-md-inline-block" href="../">Kezdőlap</a>
@@ -9,6 +9,8 @@
           @if (session()->has('usrnm'))
             <a class="py-2 d-none d-md-inline-block" href="../profile">Profil</a>
           @endif
-
+           <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                <i class="fa fa-bars"></i>
+          </a>
       </div>
     </nav>

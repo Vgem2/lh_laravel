@@ -67,7 +67,7 @@ class BaseController extends Controller
   
      public function profile()
      {
-         return view('how2');
+         return view('profile');
      }
     
 }
