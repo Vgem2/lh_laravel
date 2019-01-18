@@ -12,20 +12,24 @@
     <title>Local Heroes</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-<script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+<script src="../js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
-    <link href="css/product.css" rel="stylesheet">
+    <link href="../css/product.css" rel="stylesheet">
   </head>
 
   <body>
-      @include('parts.nav')
-  
-
+       @include('parts.nav')
+     <div style="padding-left:7.5%; width:100%; margin-top:0px; height:auto">
       @include ('parts.header')
+      </div>
       @yield('inner_title')
-      @yield ('content')
+       <div class="container">
+     
+         @yield ('content')
 
+      </div>
+     
    
 @include ('parts.footer')
 
@@ -39,14 +43,35 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
 -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="../js/jquery.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script>
-      Holder.addTheme('thumb', {
+    <script type="text/javascript">
+    /*  Holder.addTheme('thumb', {
         bg: '#55595c',
         fg: '#eceeef',
         text: 'Thumbnail'
-      });
+      });*/
+        
+$(function(){
+
+    
+     var dataArray=new Array();
+        dataArray[0]="bg1.jpg";
+        dataArray[1]="bg2.jpg";
+        dataArray[2]="bg3.jpg";
+        dataArray[3]="bg0.jpg";
+
+    
+     var thisId=0;
+window.setInterval(function ( ) {
+     $("#BG").fadeOut(700, function() {
+        $("#BG").attr("src","img/"+dataArray[thisId]);
+    }).fadeIn(700);
+          
+            thisId++; 
+            if (thisId==4) thisId=0; 
+        },10000);        
+});
     </script>
   </body>
 </html>

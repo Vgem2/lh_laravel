@@ -27,6 +27,8 @@ Route::post('/dev','BaseController@dev_post');
 
 Route::get('/how2','BaseController@how2');
 
+Route::get('/profile','BaseController@profile')
+
 Route::get('/library','BaseController@library');
 
 

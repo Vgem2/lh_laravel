@@ -1,5 +1,6 @@
 .container {
-  max-width: 960px;
+  max-width: 1200px;
+    width: 85%;
 }
 
 
@@ -82,5 +83,14 @@
 .d-md-flex a
 {
     text-decoration: none;
+}
+#BG
+{
+    min-height: 500px;
+    min-width: 79%;
+    max-width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    
 }
 

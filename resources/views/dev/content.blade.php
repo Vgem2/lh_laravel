@@ -14,5 +14,5 @@ if (!empty($name))
     @include('dev.login')
 </div>
 <?php
-}
+} //if (!empty($name)) else vége
     ?>

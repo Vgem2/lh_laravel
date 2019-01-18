@@ -24,7 +24,9 @@
 
 
       @yield('inner_title')
-      @yield ('content')
+      <div class="container">
+        @yield ('content')
+      </div>
 
    
 @include ('parts.footer')
