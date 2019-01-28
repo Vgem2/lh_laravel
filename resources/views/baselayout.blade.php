@@ -20,9 +20,9 @@
 
   <body>
        @include('parts.nav')
-     <div style="padding-left:7.5%; width:100%; margin-top:0px; height:auto">
+     
       @include ('parts.header')
-      </div>
+      
       @yield('inner_title')
        <div class="container">
      
@@ -76,10 +76,10 @@ window.setInterval(function ( ) {
       <script>
 function dropDown() {
   var x = document.getElementById("navBar");
-  if (x.className.includes("site-header")) {
+  if (!x.className.includes("responsive")) {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "d-flex flex-column flex-md-row justify-content-between";
   }
 }
 </script>
