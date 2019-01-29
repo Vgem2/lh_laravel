@@ -1,5 +1,6 @@
 .container {
-  max-width: 960px;
+  max-width: 1200px;
+    width: 85%;
 }
 
 
@@ -61,6 +62,8 @@
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+
+
 .flex-equal > * {
   -ms-flex: 1;
   flex: 1;
@@ -69,7 +72,65 @@
   .flex-md-equal > * {
     -ms-flex: 1;
     flex: 1;
+    }
+    
+.icon
+    {
+        display: none;
+    }
+#BG
+{
+    min-height: 500px;
+    min-width: 79%;
+    max-width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+}
+@media screen and (max-width: 767px) {
+
+  .justify-content-between .icon 
+{
+    display: none;
+}
+    .justify-content-between a:not(:first-child) {display: none;}
+    .justify-content-between a.icon {
+    float: right;
+    display: block;
   }
+.container {
+  max-width: 1200px;
+    width: 85%;
+    max-height:20%;
+    height: auto;
+    min-height: 300px;
+}
+    #BG
+{
+    min-height: 300px;
+    min-width: 79%;
+    max-width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+    .justify-content-between .responsive {position: relative;}
+  .justify-content-between .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+    .justify-content-between .responsive a {
+    float: left;
+    display: block;
+    text-align: left;
+  }
+}
+    
+
+@media screen and (max-width: 767px) {
+  
 }
 
 .overflow-hidden { overflow: hidden; }
@@ -83,4 +144,5 @@
 {
     text-decoration: none;
 }
+
 

@@ -16,6 +16,7 @@
 <script src="../js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="../css/product.css" rel="stylesheet">
+   
   </head>
 
   <body>
@@ -24,7 +25,9 @@
 
 
       @yield('inner_title')
-      @yield ('content')
+      <div class="container">
+        @yield ('content')
+      </div>
 
    
 @include ('parts.footer')

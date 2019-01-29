@@ -1,7 +1,6 @@
 @extends('baselayout')
 
 
-
 @section ('content')
 
     @include ('parts.content')
@@ -14,5 +13,10 @@
         <h1 class="display-5 font-weight-normal">Közelgő események</h1>
           
       </div>
+@if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+@endif
 @endsection
 
