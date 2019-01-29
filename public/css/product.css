@@ -74,6 +74,10 @@
     flex: 1;
     }
     
+.icon
+    {
+        display: none;
+    }
 #BG
 {
     min-height: 500px;

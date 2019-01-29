@@ -67,7 +67,9 @@ class BaseController extends Controller
   
      public function profile()
      {
-         return view('profile');
+         
+         $events = Events::getAllEvents();
+         return view('User.profile',compact('events'));
      }
     
 }
