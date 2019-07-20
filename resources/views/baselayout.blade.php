@@ -12,10 +12,10 @@
     <title>Local Heroes</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" >
-<script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+<script src="./js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
-    <link href="../css/product.css" rel="stylesheet">
+    <link href="./css/product.css" rel="stylesheet">
   </head>
 
   <body>
@@ -43,7 +43,7 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
 -->
-      <script src="../js/jquery.js" type="text/javascript"></script>
+      <script src="./js/jquery.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script type="text/javascript">
     /*  Holder.addTheme('thumb', {
